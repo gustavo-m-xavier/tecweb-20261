@@ -20,6 +20,8 @@ body {
 aside {
   background-color: var(--cor-fundo);
   width: 15%;
+  min-width: 220px;
+  max-width: 300px;
 }
 
 aside header {
@@ -92,5 +94,7 @@ main section article ul li {
 
   aside {
     width: 100%;
+    min-width: none;
+    max-width: none;
   }
 }
