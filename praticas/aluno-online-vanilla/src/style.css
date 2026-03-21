@@ -84,3 +84,13 @@ main section article ul {
 main section article ul li {
   list-style: none;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+  }
+}
