@@ -98,3 +98,63 @@ main section article ul li {
     max-width: none;
   }
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  border: 1px solid var(--cor-fundo);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 320px;
+
+  background-color: #fff;
+}
+
+form header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+form label {
+  color: var(--cor-texto);
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  padding: 8px;
+  border-radius: 0.5rem;
+  border: 1px solid var(--cor-fundo);
+  outline: none;
+}
+
+form input:focus {
+  border-color: #999;
+}
+
+form button {
+  padding: 8px;
+  border: none;
+  background-color: var(--cor-fundo);
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+form button:hover {
+  background-color: #dcdcdc;
+}
+
+#email-required,
+#pass-required {
+  color: red;
+  font-size: 0.8rem;
+  min-height: 16px;
+}
