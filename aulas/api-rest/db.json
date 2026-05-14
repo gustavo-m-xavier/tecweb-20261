@@ -1,10 +1,16 @@
 {
   "produtos": [
     {
-      "name": "banana",
-      "price": 3.67,
-      "quantity": 100,
-      "id": "WyfVjM-umoE"
+      "name": "melão",
+      "price": 1.8,
+      "quantity": 24,
+      "id": "8-aOJZrhGo0"
+    },
+    {
+      "name": "melão",
+      "price": 1.8,
+      "quantity": 24,
+      "id": "BktA7aBX9X8"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
