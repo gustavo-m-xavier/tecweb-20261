@@ -1,6 +1,7 @@
 import Sidebar from '../components/sidebar/Sidebar'
 import Topbar from '../components/topbar/Topbar'
 import DashboardCard from '../components/dashboard-card/DashboardCard'
+import './dashboard.css'
 
 function Dashboard() {
 

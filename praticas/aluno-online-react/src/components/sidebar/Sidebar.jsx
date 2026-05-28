@@ -16,7 +16,7 @@ function Sidebar() {
         <aside>
             <header>
                 <img src={logo} alt="" />
-                <h1>Aluno Online</h1>
+                <h2>Aluno Online</h2>
             </header>
 
             <nav>
