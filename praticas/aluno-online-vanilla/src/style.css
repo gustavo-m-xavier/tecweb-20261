@@ -1,0 +1,171 @@
+:root {
+  --cor-fundo: #e9e9e9;
+  --cor-texto: #303030;
+}
+
+* {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  display: flex;
+  min-height: 100vh;
+}
+
+aside {
+  background-color: var(--cor-fundo);
+  width: 15%;
+  min-width: 220px;
+  max-width: 300px;
+}
+
+aside header {
+  padding: 1rem;
+  display: flex;
+  justify-content: start;
+  gap: 8px;
+}
+
+aside header h2 {
+  color: var(--cor-texto);
+}
+
+aside nav ul {
+  padding-left: 1.5rem;
+  margin: 10px;
+}
+
+aside nav li {
+  margin: 1rem 0;
+}
+
+aside nav a {
+  display: block;
+  color: var(--cor-texto);
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+  margin: 20px;
+  color: var(--cor-texto);
+}
+
+main header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+main header img {
+  width: 50px;
+}
+
+main section article {
+  border: 1px solid var(--cor-fundo);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+main section article h3 {
+  background-color: var(--cor-fundo);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 1rem;
+}
+
+main section article ul {
+  padding: 1rem;
+}
+
+main section article ul li {
+  list-style: none;
+}
+
+@media screen and (width <= 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+  }
+}
+
+.main-login {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.main-login footer {
+  margin-top: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid var(--cor-fundo);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 320px;
+  background-color: #fff;
+}
+
+form header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+form label {
+  color: var(--cor-texto);
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  padding: 8px;
+  border-radius: 0.5rem;
+  border: 1px solid var(--cor-fundo);
+  outline: none;
+}
+
+form input:focus {
+  border-color: #999;
+}
+
+form button {
+  padding: 8px;
+  border: none;
+  background-color: var(--cor-fundo);
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+form button:hover {
+  background-color: #dcdcdc;
+}
+
+#email-required,
+#pass-required {
+  color: red;
+  font-size: 0.8rem;
+  min-height: 16px;
+}

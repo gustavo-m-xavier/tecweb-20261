@@ -1,0 +1,10 @@
+#root {
+  display: flex;
+  flex: 1;
+}
+
+@media screen and (width <= 768px) {
+  #root {
+    flex-direction: column;
+  }
+}
